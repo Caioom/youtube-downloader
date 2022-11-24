@@ -11,7 +11,7 @@ const downloadMp4 = async (request, response) => {
 }
 
 const downloadMp3 = async (request, response) => {
-  ytdl(request.query.URL, { quality: 'highestaudio'}).pipe(response)
+  ytdl(request.query.URL, { quality: 'lowestaudio'}).pipe(response)
 }
 
 app.get("/info", async (request, response) => {
