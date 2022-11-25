@@ -28,6 +28,10 @@
     height: 25%;
   }
 
+  .downloadButton {
+    margin-top: 5px;
+  }
+
 </style>
 <Header />
 <div class="container centerDisplayFlex alignAsColumn">
@@ -35,4 +39,5 @@
   <label for="uploadFileInput" class="uploadFileLabel centerDisplayFlex">
     <input id="uploadFileInput" type="file"/>
   </label>
+  <button class="downloadButton">Download</button>
 </div>
