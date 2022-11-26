@@ -195,6 +195,11 @@
 	button#download-mp3 {
 		background: rgb(170, 164, 3);
 	}
+
+	button.addUrl {
+		margin-left: 5px;
+	}
+
 </style>
 
 {#if didComponentMount}
@@ -204,6 +209,7 @@
 	<div class="input-block" in:fade>
 		<input placeholder="Paste the Youtube URL here" bind:value={youtubeUrl} />
 		<button type="button" on:click="{sendURL}">Download</button>
+		<button type="button" on:click="{sendURL}" class="addUrl">+</button>
 	</div>
 
 	{#if data}
